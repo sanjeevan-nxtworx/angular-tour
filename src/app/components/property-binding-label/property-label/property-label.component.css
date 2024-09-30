@@ -1,0 +1,27 @@
+.label-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  width: 300px;
+  margin: 10px 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.label-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label-details {
+  border: 1px black solid;
+}
+
+h3 {
+  margin: 0;
+  color: #333;
+}
+
+p {
+  margin: 5px 0;
+  color: #555;
+}

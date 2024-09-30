@@ -1,0 +1,24 @@
+<div class="nav-bar">
+  <ul>
+    @for (menu of menuList; track menu.name) {
+    <span class="main-subject" (click)="onClickChapter(menu.name)">
+      @if (!menu.isExpanded) {
+      <span>➢</span>
+      } @else {
+      <span>⮛</span>
+      } &nbsp;
+      <span>{{ menu.name }}</span>
+    </span>
+    @if (menu.isExpanded) {
+    <ul>
+      @for (topic of menu.options; track topic.name) {
+      <li class="topics" [routerLink]="topic.url">
+        <span>🢒</span>
+        &nbsp;
+        <span>{{ topic.name }}</span>
+      </li>
+      }
+    </ul>
+    } }
+  </ul>
+</div>

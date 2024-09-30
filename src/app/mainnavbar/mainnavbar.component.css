@@ -1,0 +1,35 @@
+.nav-bar {
+  width: 200px;
+  height: 500px;
+  background-color: black;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.main-subject {
+  color: white;
+  padding-left: 5px;
+  display: block;
+  font-size: small;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.topics {
+  color: white;
+  padding-left: 20px;
+  font-size: x-small;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.topics:hover {
+  text-decoration: underline;
+  color: yellow;
+  cursor: pointer;
+}

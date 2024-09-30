@@ -1,0 +1,30 @@
+.card-subject {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.card-subject ~ p {
+  font-style: italic;
+}
+
+card-newsubject {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.card-newsubject ~ p {
+  font-style: italic;
+  color: green;
+}
+
+.header {
+  color: blue;
+}
+
+.body {
+  color: red;
+}
+
+.footer {
+  color: green;
+}

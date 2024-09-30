@@ -1,0 +1,11 @@
+<p>Using ngFor</p>
+<app-ngforitem
+  *ngFor="let item of items; let num = index"
+  [index]="num"
+  [item]="item"
+/>
+<hr />
+<p>Using For Loop</p>
+@for (item of items; track item.name ) {
+<app-ngforitem [index]="0" [item]="item" />
+}

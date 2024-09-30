@@ -1,0 +1,9 @@
+.main-app {
+  display: flex;
+}
+
+.body-app {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}

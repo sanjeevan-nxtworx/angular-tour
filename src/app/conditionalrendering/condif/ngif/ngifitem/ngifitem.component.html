@@ -1,0 +1,25 @@
+<div class="label-container" [appHighlight]="'yellow'">
+  <!-- Use NgClass to conditionally set Styles -->
+  <span [ngClass]="{ redtext: isEmpty(), bluetext: item.qty !== 0 }"
+    ><strong>#{{ index + 1 }}&nbsp;{{ item.name }}</strong></span
+  >
+  &nbsp;
+  <!-- bind class stype to element -->
+  <span [class.redtext]="isEmpty()"><strong>Type:</strong>{{ item.type }}</span>
+  &nbsp;
+  <span><strong>Cost:</strong> {{ item.cost }}</span>
+  &nbsp;
+  <!--
+  <span *ngIf="item.qty !== 0; else notAvailable"
+    >Qty: {{ item.qty }}&nbsp;{{ item.unit }}</span
+  >
+  <ng-template #notAvailable>
+    <span>** Not Available **</span>
+  </ng-template>
+-->
+  @if (item.qty !== 0) {
+  <span>Qty: {{ item.qty }}&nbsp;{{ item.unit }}</span>
+  } @else {
+  <span>** Not Available **</span>
+  }
+</div>

@@ -1,0 +1,25 @@
+<!-- Define a template variable #inputBox to reference the input field -->
+<input #inputBox type="text" placeholder="Enter your name" />
+
+<!-- Button that triggers the display of the input field value -->
+<button (click)="displayValue(inputBox.value)">Display Name</button>
+
+<!-- Display the value -->
+<p>Your name is: {{ name }}</p>
+
+<input #inputCity type="text" placeholder="Enter your city" />
+
+<!-- Button that triggers the display of the input field value -->
+<button (click)="displayCity()">Display City</button>
+
+<!-- Display the value -->
+<p>Your name is: {{ city }}</p>
+
+<!-- Access child component using template reference -->
+<app-child #childComponent></app-child>
+
+<!-- Button in the parent to call the child component's method -->
+<button (click)="accessChildMethod()">Call Child Method from Parent</button>
+
+<!-- Display the child's message in the parent -->
+<p>Message from Child: {{ childMessage }}</p>

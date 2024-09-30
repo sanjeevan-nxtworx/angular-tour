@@ -1,0 +1,13 @@
+<div class="card">
+  <header>
+    <ng-content select=".header"></ng-content>
+  </header>
+  <section>
+    <!-- If no .body content is projected, show default content -->
+    <ng-content select=".body"></ng-content>
+    <div *ngIf="!bodyPresent">No body content provided.</div>
+  </section>
+  <footer>
+    <ng-content select=".footer"></ng-content>
+  </footer>
+</div>

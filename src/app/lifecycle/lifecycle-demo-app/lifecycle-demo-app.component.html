@@ -1,0 +1,6 @@
+<button (click)="toggleComponent()">Toggle Component</button>
+<input [(ngModel)]="inputValue" placeholder="Enter some text" />
+<app-lifecycle-demo
+  *ngIf="showComponent"
+  [sampleInput]="inputValue"
+></app-lifecycle-demo>
