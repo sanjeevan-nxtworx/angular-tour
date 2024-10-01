@@ -13,6 +13,11 @@ import { SingleslotprojectionComponent } from './conditionalrendering/contentpro
 import { LifecycleDemoAppComponent } from './lifecycle/lifecycle-demo-app/lifecycle-demo-app.component';
 import { TemplaterefsComponent } from './components/templaterefs/templaterefs.component';
 import { StructuraldirectiveComponent } from './directives/structuraldirective/structuraldirective.component';
+import { TemplateformComponent } from './templateform/templateform.component';
+import { ReactiveformComponent } from './reactiveform/reactiveform.component';
+import { ServicedcomponentComponent } from './servicedcomponent/servicedcomponent.component';
+import { ObservercomponentComponent } from './observercomponent/observercomponent.component';
+import { OutputComponent } from './components/output/output.component';
 export const routes: Routes = [
   {
     path: '', // Home
@@ -33,6 +38,10 @@ export const routes: Routes = [
   {
     path: 'input-data-components', // String Interpolation
     component: InputDataLabelsComponent,
+  },
+  {
+    path: 'output-data-components', // String Interpolation
+    component: OutputComponent,
   },
   {
     path: 'property-binding', // String Interpolation
@@ -65,5 +74,21 @@ export const routes: Routes = [
   {
     path: 'lifecycle-demo', // String Interpolation
     component: LifecycleDemoAppComponent,
+  },
+  {
+    path: 'template-form-init', // Template form first demo
+    component: TemplateformComponent,
+  },
+  {
+    path: 'reactive-form-init', // Template form first demo
+    component: ReactiveformComponent,
+  },
+  {
+    path: 'service-init', // Service demo
+    component: ServicedcomponentComponent,
+  },
+  {
+    path: 'observable-init', // Observable demo
+    component: ObservercomponentComponent,
   },
 ];

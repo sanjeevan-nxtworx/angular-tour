@@ -1,0 +1,12 @@
+<div style="text-align: center">
+  <h1>{{ title }}</h1>
+
+  <!-- Show loading message while data is being fetched -->
+  <p *ngIf="loading">Loading items...</p>
+
+  <!-- Display the list of items when loaded -->
+  <ul *ngIf="!loading">
+    <li *ngFor="let item of items">{{ item }}</li>
+  </ul>
+  <p>Count = {{ count }}</p>
+</div>

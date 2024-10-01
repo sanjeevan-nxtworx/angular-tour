@@ -29,7 +29,10 @@ export class MainnavbarComponent {
           name: 'Inputs to Components',
           url: '/input-data-components',
         },
-
+        {
+          name: 'Outputs to Components',
+          url: '/output-data-components',
+        },
         {
           name: 'Property Binding',
           url: '/property-binding',
@@ -73,6 +76,40 @@ export class MainnavbarComponent {
         {
           name: 'Lifecycle Demo',
           url: '/lifecycle-demo',
+        },
+      ],
+    },
+    {
+      name: 'Forms',
+      isExpanded: false,
+      options: [
+        {
+          name: 'Template Form',
+          url: '/template-form-init',
+        },
+        {
+          name: 'Reactive Form',
+          url: '/reactive-form-init',
+        },
+      ],
+    },
+    {
+      name: 'Services',
+      isExpanded: false,
+      options: [
+        {
+          name: 'Service Basic',
+          url: '/service-init',
+        },
+      ],
+    },
+    {
+      name: 'Observables',
+      isExpanded: false,
+      options: [
+        {
+          name: 'Observable Basic',
+          url: '/observable-init',
         },
       ],
     },
